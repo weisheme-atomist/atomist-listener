@@ -1,13 +1,11 @@
-// index.js
-
 const path = require('path');
 const express = require('express');
-const exphbs = require('express-handlebars');
+const handlebars = require('express-handlebars');
 
 const app = express();
 const port = 3000;
 
-app.engine('.hbs', exphbs({
+app.engine('.hbs', handlebars({
     defaultLayout: 'main',
     extname: '.hbs',
     layoutsDir: path.join(__dirname, 'views/layouts')

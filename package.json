@@ -1,0 +1,16 @@
+{
+  "name": "atomist-listener",
+  "version": "1.0.0",
+  "description": "Listens to events that happen on github.com/weisheme-atomist",
+  "private": true,
+  "repository": "https://github.com/weisheme-atomist/atomist-listener",
+  "scripts": {
+    "start": "DEBUG=express* node index.js"
+  },
+  "dependencies": {
+    "express-handlebars": "latest",
+    "express": "latest",
+    "@atomist/automation-client": "latest",
+    "graphql": "0.13.2"
+  }
+}
